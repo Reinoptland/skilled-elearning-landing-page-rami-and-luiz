@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+body {
+}
+
+.top-bar {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar__logo {
+}
+
+.btn {
+  padding: 10px 24px;
+  border-radius: 28px;
+  border: none;
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: bold;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #13183f;
+  color: #ffffff;
+}
+
+.btn:hover {
+  background-color: #666ca3;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .top-bar {
+    padding: 24px 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .top-bar {
+    padding: 24px 165px;
+  }
+}
+
+.hero {
+  padding: 16px;
+}
+
+.hero-mobile {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-mobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(./assets/image-hero-tablet.png);
+    background-repeat: no-repeat;
+    background-position: top -92px right -297px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    background-image: url(./assets/image-hero-desktop.png);
+    background-repeat: no-repeat;
+    background-position: top -146px right -335px;
+  }
+}
